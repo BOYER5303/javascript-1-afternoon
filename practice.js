@@ -3,7 +3,7 @@
 //Create a variable called myName that is a string data type
 
 //Code here
-var myName = Jason;
+var myName = 'string';
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
@@ -37,8 +37,8 @@ var greatestFear;
 
 //Code here
 function greeting(name){
-  return "Hello, " + name
-};
+  return "Hello, " + name;
+}
 
 //////////////////PROBLEM 7////////////////////
 
@@ -46,16 +46,19 @@ function greeting(name){
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-function newGreeting(name){
-  alert("Hello, " + name)
-};
+let newGreeting = function(name){
+  console.log('name ----->',name)
+  return "Hello, " + name;
+ 
+}
+newGreeting('jason');
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-let grocieries = ["apples", "milk", "eggs", "bread"];
+let groceries = ["apples", "milk", "eggs", "bread"];
 //////////////////PROBLEM 9////////////////////
 
 //Create an object saved to the variable dog.
@@ -75,6 +78,7 @@ let dog = {
 
 //Code Here
 let devMountainClassPet = dog.name;
+
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -86,12 +90,15 @@ let devMountainClassPet = dog.name;
 
 // Code here
 function nameCheck(tempName){
-  if(name === Steven){
-    return 'What is up Steven?'
-  } else { 
-    return "Cool name, " + tempName
+  if(tempName === 'Steven'){
+    return 'What is up Steven?';
+  } else if (tempName === 'Bryan'){
+    return 'Hey Bryan!';
+  } else {
+    return "Cool name, " + tempName;
   }
 }
+
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
@@ -99,9 +106,10 @@ function nameCheck(tempName){
 // The add function should return the two parameters added together
 
 //Code Here
-function add(param1, param2){
-  return(param1 + param2)
+function add(number1, number2){
+  return number1 + number2;
 }
+
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
@@ -175,4 +183,4 @@ let newAge = age++;
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-let age = 999;
+age = 999;
